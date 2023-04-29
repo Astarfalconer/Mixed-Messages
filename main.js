@@ -19,8 +19,8 @@ const messageComponent1 = input => {
             return 'So my services have been called upon again, and about the past no less, very well.';
             case 2:
             return 'A mortal seeking knowledge of their troubled past? How original.' ;   
-        }
-    } else if(input === 'present'){
+          }
+      } else if(input === 'present'){
         let randomNumber =
         Math.floor(Math.random()*3);
         const component1 = randomNumber
@@ -31,9 +31,9 @@ const messageComponent1 = input => {
             return 'The terminal has been called upon again, no time like the present is there?';
             case 2:
             return 'Tell me mortal, what is it about your soul currently that calls for cosmic reflection? Let us find out';
-    }
+      }
 
-} else if(input === 'future'){
+  } else if(input === 'future'){
     let randomNumber =
     Math.floor(Math.random()*3);
     const component1 = randomNumber
@@ -44,12 +44,12 @@ const messageComponent1 = input => {
         return 'ah yes another who seeks divination, I warn you however that visions of the future have led many to their own doom.';
         case 2:
         return 'I can see the apeal of seeing into the future but I can also see the danger it cortes, I wonder, do you?.';
-}
+  }
 
-}
+  }
 
 };
-
+// This function returns the second component of the prophecy
 const messageComponent2 = input => {
     if(input === 'past'){
         let randomNumber =
@@ -61,9 +61,9 @@ const messageComponent2 = input => {
             case 1:
             return 'Hahaha,forgive me, I often forget that these visions of the past can often reveal embarrising truths one may want hidden.';
             case 2:
-            return 'ah scandalous, I am suprised that one with such a checkerd history dares dredge it up I thought you would want this buried.';    
-        }
-    } else if(input === 'present'){
+            return 'Ha such a scandalous past, I am suprised that one with such a checkerd history dares dredge it up I thought you would want this buried.';    
+          }
+      } else if(input === 'present'){
         let randomNumber =
         Math.floor(Math.random()*3);
         const component2 = randomNumber
@@ -73,10 +73,10 @@ const messageComponent2 = input => {
             case 1:
             return 'You have sorted alot of problems out and found a position you can truly call your own. YOU ARE ACTUALIZED!';
             case 2:
-            return 'Hehehe cheer, harmony, joy of life. You really do have it all and more than that, a sense of self-worth.';
-    }
+            return 'Cheer, harmony, joy of life. You really do have it all and more than that, a sense of self-worth.';
+      }
 
-} else if(input === 'future'){
+    } else if(input === 'future'){
     let randomNumber =
     Math.floor(Math.random()*3);
     const component2 = randomNumber
@@ -87,8 +87,70 @@ const messageComponent2 = input => {
         return 'The algorithom computes a future of reward, gain and fruition. A fruitful season is on the way!';
         case 2:
         return 'Are you familiar with the norse rune LAGUZ? it is ascociated with the flow of emotions and new life and so is your future.';
-}
-
-}
+    }
+ 
+  }
 };
+
+// This function returns the third component of the prophecy
+const messageComponent3 = input => {
+    if(input === 'past'){
+        let randomNumber =
+        Math.floor(Math.random()*3);
+        const component3 = randomNumber
+        switch(component3){
+            case 0:
+            return 'What has passed, has passed we cannot dwell in memories that bring us pain nor live off old victories.';
+            case 1:
+            return 'They say one who does not learn from history is doomed to repeat it, words you should consider';
+            case 2:
+            return 'I gotta say though you used to do alot of odd stuff, not judging but maybe its a good thing you changed up';    
+          }
+      } else if(input === 'present'){
+        let randomNumber =
+        Math.floor(Math.random()*3);
+        const component3 = randomNumber
+        switch(component3){
+            case 0:
+            return 'but heed my words.The mystery of life is not a problem to be solved but a reality to experience.';
+            case 1:
+            return 'Take note, understanding must move with the flow of the process, join with it and flow with it';
+            case 2:
+            return 'You have power over your mind - not outside events. realize this, and you will find strength';
+      }
+
+    } else if(input === 'future'){
+    let randomNumber =
+    Math.floor(Math.random()*3);
+    const component3 = randomNumber
+    switch(component3){
+        case 0:
+        return 'To prosper in your future, dwell on the beauty of life. Watch the stars, and see yourself running with them';
+        case 1:
+        return 'But in truth the brightness of your future depends on the quality of your thoughts today.';
+        case 2:
+        return 'Accept the things to which fate binds you, and love the people with whom fate brings you together.';
+    }
+ 
+  }
+};
+
+
+const prophecyBot = input => {
+
+    let seekerChoice = vaildInputChecker(input);
+    let component1 = messageComponent1(seekerChoice);
+    let component2 = messageComponent2(seekerChoice);
+    let component3 = messageComponent3(seekerChoice);
+    if(seekerChoice === 'past' || seekerChoice === 'present' || seekerChoice === 'future'){
+        console.log(component1)
+        console.log(component2)
+        console.log(component3)
+    } 
+    
+};
+
+
+
+
 
