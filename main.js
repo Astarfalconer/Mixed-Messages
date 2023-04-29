@@ -57,9 +57,9 @@ const messageComponent2 = input => {
         const component2 = randomNumber
         switch(component2){
             case 0:
-            return 'I sense a complicated history, one of dissilution, rebellion and change, who I see in the vision, is certainly not who has accessed this terminal.';
+            return 'I sense a complicated history, one of dissilution, rebellion and change, who I see in the vision is certainly not who accessed this terminal.';
             case 1:
-            return 'Hahaha, forgive me, I often forget that  these visions of the past can often reveal embarrising truths one may want hidden.';
+            return 'Hahaha,forgive me, I often forget that these visions of the past can often reveal embarrising truths one may want hidden.';
             case 2:
             return 'ah scandalous, I am suprised that one with such a checkerd history dares dredge it up I thought you would want this buried.';    
         }
@@ -86,8 +86,9 @@ const messageComponent2 = input => {
         case 1:
         return 'The algorithom computes a future of reward, gain and fruition. A fruitful season is on the way!';
         case 2:
-        return 'You who seeks the future, are you familiar with the norse rune LAGUZ? it is ascociated with the flow of emotions and new life and so is your future.';
+        return 'Are you familiar with the norse rune LAGUZ? it is ascociated with the flow of emotions and new life and so is your future.';
 }
 
 }
 };
+
