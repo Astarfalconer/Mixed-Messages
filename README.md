@@ -8,4 +8,4 @@ This program is a random message generator that takes in string inputs and retur
 * 'future'
 
 ## How to call function
-simply call prophecyBot() with one of the three correct inputs.
+simply call prophecyBot() with one of the three correct inputs as a parameter.
